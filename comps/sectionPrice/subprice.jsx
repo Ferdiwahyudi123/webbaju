@@ -7,6 +7,8 @@ export const subprice = ({
   keterangan,
   className,
   sellerclass,
+  href,
+  button,
 }) => {
   return (
     <>
@@ -17,10 +19,10 @@ export const subprice = ({
           <div className="card-body text-center ">
             <h4 className="card-title">{title}</h4>
             <p className="lead card-subtitle">{subtitle}</p>
-            <p className="display-5 my-4 text-primary fw bold">Rp. {harga}</p>
+            <p className="display-6 my-4 text-primary fw bold">Rp. {harga}</p>
             <p className="card-text ">{keterangan}</p>
-            <Link href="/product">
-              <a className="btn btn-outline-primary btn-lg mt-3">View</a>
+            <Link href={`${href}`}>
+              <a className="btn btn-outline-primary btn-lg mt-3">{button}</a>
             </Link>
           </div>
         </div>

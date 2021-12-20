@@ -40,7 +40,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item mr-3">
                 <Link href="/register">
-                  <a className="btn btn-outline-primary ">Sign Up</a>
+                  <a className="btn btn-outline-primary ">Register</a>
                 </Link>
               </li>
             </ul>
